@@ -1,0 +1,25 @@
+<div class="right-side-main">
+    <div class="top-panel">
+        <img class="pfp" src="https://picsum.photos/100" alt="profile pic for top user">
+        <h1>{{ user.get('username') }}</h1>
+    </div>
+
+    <div class="list-of-recs">
+        <h2>Suggestions for you</h2>
+        {% for item in suggestions %}
+        <div class="suggestion">
+            <img src="{{ item.get('image_url') }}" alt="profile pic for item">
+            <div class="description">
+                <p class="caption">
+                    {{ item.get('username') }}
+                </p>
+                <h4 class="suggested">
+                    suggested for you
+                </h4>
+            </div>
+            <p class="follow">
+                <a href="/"> follow</a>
+            </p>
+        </div>
+        {% endfor %}
+</div>

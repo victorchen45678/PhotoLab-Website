@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>PhotoApp</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {% include 'includes/navbar.html' %}
+
+    <div class="main">
+        {% include 'includes/stories.html' %}
+        
+        {% include 'includes/suggestions.html' %}
+    </div>
+
+</body>
+</html>
+
+<!--
+Before someone posts, they will see a pane, like the title pane,
+ where they have the option to add an alt text that will get added to their post.
+The caption of the photo, with the creator’s username, the text of the caption, and 
+a “more” link (respectively) should be below the likes.
+-->

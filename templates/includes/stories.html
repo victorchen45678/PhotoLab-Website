@@ -1,0 +1,14 @@
+<div class="left-side-main">
+    <div class="container">
+        {% for story in stories[:5] %}
+        <div class="story">
+            <img src="{{ story.get('user').get('image_url') }}" alt="profile pic for {{story.get('user').get('username')}}">
+            <p class="username">
+                {{ story.get('user').get('username') }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% include 'includes/cards.html' %}
+</div>  

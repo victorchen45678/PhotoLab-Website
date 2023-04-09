@@ -1,0 +1,305 @@
+.right-side-main {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+}
+
+.left-side-main {
+    width: 70%;
+}
+
+.navbar {
+    top: 0;
+    height: 20%;
+    width: 100%;
+    position: sticky;
+    display: flex;
+    background-color: white;
+    padding-top: 1%;
+}
+.navbar > h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+
+.main {
+    margin-top: 3%;
+    display: flex;
+}
+
+.leftsidenav {
+    margin-left: 5%;
+}
+
+.leftsidenav > a {
+    font-size: large;
+}
+
+.rightsidenav {
+    position: absolute;
+    right: 0;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+
+.rightsidenavcard {
+    float: right;
+}
+
+#signout {
+    color: blue;
+}
+
+.middlesidenav{
+    float: center;
+}
+
+.cardnavbar {
+    margin: 2%;
+    padding-top: 1%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.interaction {
+    margin: 2%;
+}
+
+.icons-section {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.usercomment {
+    margin: 2%
+}
+
+.likes-section {
+    font-weight: bold;
+    font-family: arial;
+    margin-bottom: 3%;
+}
+
+.author-caption > a {
+    margin-left: 3%;
+}
+
+.names {
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+.friend > a {
+    margin-left: 1%; 
+}
+
+#post {
+    color: blue;
+}
+h3 {
+    color: black;
+    font-family: Helvetica;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-section {
+    box-sizing: border-box;
+    border: 1px #CCC; 
+    width: 70%;
+    height: 15%;  
+    margin-top: 2%;
+    margin-left: 10%;
+    background-color: white;   
+}
+
+.page-section img {
+    width: 70%;
+    max-height: 40%;
+    display: block;
+  }
+
+
+.top-panel{
+    display:flex;
+    flex-direction:row;
+    gap: 40px;
+    align-items:center;
+    justify-content: left;
+
+    
+}
+
+h1{
+    margin-right:20px;
+    margin-left:20px;
+    text-align: center;
+    height:70px;
+    font-size:250%;
+    font-family: 'Comfortaa', cursive;
+}
+h2{
+    color: gray;
+    font-size:150%;
+    font-family: 'Comfortaa', cursive;
+}
+
+.list-of-recs{
+    justify-content: space-between;
+    display:flex;
+    flex-direction:column;
+}
+.suggestion{
+    display:flex;
+    flex-direction:row;
+    gap:35px;
+    align-items:stretch;
+    justify-content:flex-start;
+}
+
+.suggestion > img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.description{
+    width:150px;
+}
+
+.caption{ 
+    width: 200px;
+    font-size: 150%;
+    margin-bottom:0;
+
+    
+    
+}
+
+h4{
+    flex:1;
+    color: gray;
+    margin:0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.follow{
+    display:flex;
+    color: blue;
+    width:50px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.container{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    justify-content:start;
+    align-items:stretch; 
+    width: 70%;
+    margin-left: 10%;
+    background-color: white;   
+}
+
+.story{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    width:100px;
+    align-items:center;
+    justify-content:space-between;
+    text-align: center;
+    vertical-align: center;
+}
+
+.story > img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.username{
+    width:150px;
+    margin:0;
+    border-right:20px;
+    
+}
+
+img{
+    border-radius:50%;
+}
+
+.card-image-section > img {
+    border-radius: 0;
+    width: 100%;
+}
+
+.time > a {
+    color: #8e8e8e
+}
+
+.usercomment > a {
+    color: #8e8e8e;
+    margin-left: 2%;
+}
+
+
+a:link { 
+    text-decoration: none; 
+}
+
+a:visited { 
+    text-decoration: none; 
+}
+
+a:hover { 
+    text-decoration: none; 
+}
+
+a:active { 
+    text-decoration: none; 
+}
+
+
+@media (max-width:1050px){
+    .right-side-main {
+        display:none;
+    }
+
+    .left-side-main {
+        width: 90%
+    }
+
+    .container {
+        width: 100%;
+        margin: 5%
+    }
+
+    .page-section {
+        width: 100%;
+        margin: 5%;
+    }
+    .leftsidenav {
+        width: 100%;
+    }
+
+    .rightsidenav {
+        position: absolute;
+        right: 0;
+        padding-right: 1%;
+        padding-top: 3%;
+    }
+}
